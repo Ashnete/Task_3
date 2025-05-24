@@ -34,7 +34,7 @@ def play_game():
     original_word = random.choice(word_list)
     scrambled = scramble_word(original_word)
 
-    print("🔀 Welcome to the Word Scramble Game!")
+    print("Welcome to the Word Scramble Game!")
     print("Unscramble the letters to guess the word.")
     print(f"Scrambled word: {scrambled}")
 
@@ -47,15 +47,15 @@ def play_game():
 
         # Check if the guess matches the original word
         if guess == original_word:
-            print(f"✅ Correct! You guessed it in {attempts} attempt(s).")
+            print("Correct! You guessed it in {attempts} attempt(s).")
             break
         else:
-            print("❌ Incorrect guess.")
+            print("Incorrect guess.")
             remaining = max_attempts - attempts
             if remaining > 0:
                 print(f"Try again. Attempts left: {remaining}")
             else:
-                print("🚫 Out of attempts. Game Over!")
+                print("ssOut of attempts. Game Over!")
                 print(f"The correct word was: '{original_word}'")
 
 

@@ -17,7 +17,7 @@ def main():
     attempts = 0
     max_attempts = 10
 
-    print("🎯 Welcome to the 'Guess the Number' game!")
+    print(" Welcome to the 'Guess the Number' game!")
     print("I'm thinking of a number between 1 and 100.")
     print("Can you guess it?")
 
@@ -35,12 +35,12 @@ def main():
                 print("Too high! Try again.")
             elif attempts > max_attempts:
                 # If the player exceeds the maximum number of allowed attempts, end the game
-                print(f"❌ You've exceeded the maximum number of attempts ({max_attempts}). Game over!")
+                print(f" You've exceeded the maximum number of attempts ({max_attempts}). Game over!")
             else:
-                print(f"🎉 Correct! You guessed the number in {attempts} attempts.")
+                print(f" Correct! You guessed the number in {attempts} attempts.")
 
         except ValueError:
-            print("❌ Please enter a valid integer.")
+            print(" Please enter a valid integer.")
 
 if __name__ == "__main__":
     main()
